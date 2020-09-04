@@ -54,7 +54,10 @@ span {
 
 .bg_section_1 h1{
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 19px;
+	position: absolute;
+	top: 90px;
+	right: 33px;
 }
 
 
@@ -151,35 +154,48 @@ span {
 	margin: auto;
 	color: white;
 	padding: 70px 0 0 0;
-	min-height: 370px;
+	min-height: 290px;
 }
 
 .bg_section_1 .yellow_line{
-	background: #FBD600;
-	color: black;
-	width: 30%;
-	padding: 15px 40px;
+	background: url(../images/barras.png);
+	background-repeat: no-repeat;
+	color: #ececec;
+	background-size: cover;
+	padding: 15px 10;
 	display: flex;
-	text-align: right;
+	width: 48%;
+	line-height: 1.7;
+	min-height: 214px;
 	justify-content: flex-end;
+	/* align-items: center; */
 }
 .bg_section_1 .yellow_line img{
-	width: 60px;
+	width: 155px;
 	margin: 0 20px 0 0;
-	height: 60px;
+	height: 149px;
+	position: relative;
 }
 
 .bg_section_1 .content_yellow{
-	width: 25%;
+	width: 30%;
 	max-width: 30%;
-}
-.bg_section_1 .content_yellow .bg_black{
-	background: black;
-	padding: 10px 30px;
+	color: #ececec;
 	position: relative;
-	left: 160px;
-	line-height: 2;
+	top: -20px;
+
 }
+.bg_section_1 .yellow_line .bg_black{
+	background: transparent;
+	color: #ececec;
+	padding: 10px 20px 10px 25px;
+	position: relative;
+	line-height: 1.8;
+	width: 47%;
+	margin: 0 20px;
+	
+}
+
 .section_2{
 	padding: 150px 0 20px;
 }
@@ -590,6 +606,7 @@ color: #ececec;
 	font-weight: bold;
 	margin: 0 8px;
 	min-width: 190px;
+	margin: 16px 0 0 0;
 
 }
 
@@ -723,6 +740,9 @@ section .bg-content_l {
 
 
 @media (min-width: 1900px) {
+/* .bg_section_1{
+	width: 1600px;
+} */
 
 	.content_page {
 		max-width: 1280px;
@@ -746,6 +766,55 @@ section .bg-content_l {
 	}
 }
 @media (max-width: 1024px) {
+
+	.bg_section_1 .yellow_line {
+	 background: none;
+		background-repeat: no-repeat;
+		color: #ececec;
+		background-size: cover;
+		padding: 15px 10;
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		line-height: 1.7;
+		min-height: 214px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: auto;
+		margin: auto;
+		position: relative;
+    	top: 72px;
+	}
+
+
+	.infoo{
+		width: 73%;
+		margin: auto;
+	}
+
+	.bg_section_1 h1 {
+		font-weight: bold;
+		font-size: 19px;
+		position: absolute;
+		top: 94px;
+		 right: unset;
+	}
+
+	.bg_section_1 .yellow_line .bg_black {
+		background:  url(../images/barras.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		min-height:183px;
+		text-align: center;
+		color: #ececec;
+		padding: 10px 20px 10px 25px;
+		position: initial;
+		line-height: 1.8;
+		width: 82%;
+		margin: auto;
+	}
+
 	.bg-section_2 .info-section_2 .img img {
 		width: 325px;
 		position: absolute;
@@ -763,7 +832,7 @@ section .bg-content_l {
 		grid-template-columns: 100%;
 	}
 
-	bg_section_1 .content_yellow .bg_black {
+	.bg_section_1 .content_yellow .bg_black {
 		background: black;
 		padding: 10px 30px;
 		position: relative;
@@ -858,7 +927,7 @@ section .bg-content_l {
 	}
 
 	.section_2 {
-		padding: 244px 0 20px;
+		padding: 324px 0 20px;
 	}
 
 	.content_page  .responsive_display .white_section_3{
@@ -874,10 +943,38 @@ section .bg-content_l {
 		font-weight: bold;
 		margin: auto;
 	}
+	
 
 }
 
 @media (max-width: 768px) {
+
+	.yellow_section_5::before {
+		content: ' >';
+		position: absolute;
+		left: -22px;
+		padding: 0 0 0 5px;
+		width: 27px;
+		font-size: 2.5em;
+		top: 25%;
+		height: 33px;
+		display: flex;
+		justify-content: center;
+		border-radius: 50%;
+		background: white;
+		align-items: center;
+		border: 2px solid black;
+	}
+
+	.infoo{
+		width: 85%;
+		margin: auto;
+	}
+
+	.bg_section_1 .yellow_line .bg_black {
+		font-size: 13px;
+	}
+
 
 	.ef-carousel{
 		display:block;
@@ -937,7 +1034,7 @@ section .bg-content_l {
 
 
 	.section_2 {
-		padding: 144px 0 20px;
+		padding: 133px 0 20px;
 	}
 
 	.bg-section_2 {
@@ -976,6 +1073,7 @@ section .bg-content_l {
 		width: 100%;
 		position: initial;
 		top: -40px;
+		padding: 0 25px;
 	}
 
 	.bg-section_2 .info-section_2 .text p {
@@ -1096,7 +1194,7 @@ section .bg-content_l {
 	}
 
 	section .section_5 .bg_section_5 {
-		background: url(../images/bg_section_5.png);
+		background: url(../images/bg_section_5_responsive.png);
 		min-height: 141px;
 		background-size: cover;
 		background-position: right;
@@ -1143,7 +1241,7 @@ section .bg-content_l {
 	}
 
 	section .bg_section_7 {
-		background: url(../images/bg_section_7.png);
+		background: url(../images/bg_Section_7_responsive.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -1152,7 +1250,7 @@ section .bg-content_l {
 		min-height: 141px;
 	}
  section	.bg_section_9 {
-		background: url(../images/bg_section_9.png);
+		background: url(../images/bg_Section_9_responsive.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -1162,7 +1260,7 @@ section .bg-content_l {
 
 
 	section .bg_section_11 {
-		background: url(../images/bg_section_11.png);
+		background: url(../images/bg_Section_11_responsive.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -1233,14 +1331,80 @@ section .bg-content_l {
 
 @media (max-width: 576px) {
 
-	.bg_section_1 h1{
-		margin: 20px 0;
+	.bg_section_1 .yellow_line .bg_black p{
+		font-size: 11px;
 	}
 
-	.bg_section_1 .yellow_line img{
-		width: 40px;
-		margin: 0 5px 0 0;
-		height: 40px;
+	.bg_section_1 {
+		padding: 0;
+	}
+	.infoo{
+		width: auto;
+		margin: auto;
+		position: relative;
+    top: -20px;
+	}
+
+
+	.section_2 {
+		padding: 70px 0 20px;
+	}
+
+
+
+	.bg_section_1 h1 {
+	font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    top: 27px;
+    right: unset;
+    font-size: 8px !important;
+    margin: 0 0 0 15px;
+	}
+
+.bg_section_1 .yellow_line .bg_black {
+    background: url(../images/barras.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: auto;
+    text-align: center;
+    color: #ececec;
+    padding: 10px 20px 10px 25px;
+    position: initial;
+    line-height: 1.2;
+    width: 75%;
+    margin: 0 20px;
+    font-size: 15px;
+}
+.bg_section_1 .yellow_line {
+    background: none;
+    background-repeat: no-repeat;
+    color: #ececec;
+    background-size: cover;
+    padding: 15px 10;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    line-height: 1.7;
+    min-height: 214px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+
+	.bg_section_1 h1{
+		margin: 20px 0 0 9px;
+	}
+
+	.bg_section_1 .yellow_line img {
+		width: 66px;
+		margin: 0 20px 0 0;
+		height: 63px;
+		position: relative;
 	}
 
 	.section_cities .info_city span {
@@ -1250,13 +1414,6 @@ section .bg-content_l {
 section .bg_section_1 {
 	min-height: 204px!important;
 }
-	.bg_section_1 .yellow_line {
-		background: #FBD600;
-		color: black;
-		width: 45%;
-		padding: 15px 24px;
-		text-align: right;
-	}
 	 h1 {
 		font-size: 12px!important;
 		font-weight: bold;
@@ -1294,9 +1451,7 @@ section .bg_section_1 {
 
 @media  (max-width: 374px)
 {
-	.bg_section_1 h1{
-		margin: 2px 0;
-	}
+
 }
 
 
