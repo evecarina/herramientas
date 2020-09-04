@@ -238,7 +238,8 @@
 
             <div class="section_5">
                 <div class="bg_section_5 bg-content_l">
-                    <div class="yellow_section_5">
+                    <div class="info_section__5">
+                        <div class="yellow_section_5">
                       
                             <span>Visitas técnicas por</span> 
                             <h3>
@@ -252,6 +253,7 @@
                                 ¿Tienes algún problema con tus electrodomésticos, herramientas, muebles, cerámicos, porcelanatos, inodoros, muebles de terraza o cualquier otro producto que compraste en nuestras tiendas y te dificulte traerlo?
                             </p>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <div class="content_page">
@@ -397,12 +399,15 @@
 
             <div class="section_5">
                 <div class="bg_section_9 bg-content_l">
-                    <div class="yellow_section_5">
+                    
+                    <div class="info_section__5">
+                        <div class="yellow_section_5">
                     
                             <span>Manteneimiento</span> 
                         <h3>
                         PREVENTIVO
                         </h3>
+                    </div>
                     </div>
                 <div class="responsive_none">
                     <div class="info_section_5">
@@ -582,15 +587,16 @@
                 <br>
 
                 <div class="buttons_places">
-                    <button onclick="mostrar_lima()" class="p_sodimac bg_btn_black">
+                    <button onclick="mostrar_lima()" id="btn_lima" class="p_sodimac bg_btn_black">
                         Lima
                       </button>
-                      <button onclick="mostrar_provincia()" class="p_maestro">
+                      <button onclick="mostrar_provincia()" id="btn_provincia" class="p_maestro">
                          Provincia
                       </button>
                 </div>
                 <div class="section_cities s_sodimac" id="sodimac">
-                    <div class="lima" id="lima">
+                   <div id="lima">
+                    <div class="lima">
                         <div class="info_city">
                             <span class="yellow_text">Ate Vitarte: </span> <span> Av. Los Frutales N° 202 </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
@@ -619,7 +625,9 @@
                             <span class="yellow_text"> Comas:  </span> <span> Los Angeles / Av. El Retablo , frente al mercado Mayorista Unicach </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                     </div>
-                   <div class="pronvincia d_none" id="provincia">
+                   </div>
+                  <div id="provincia" class="d_none">
+                    <div class="pronvincia">
                         <div class="info_city">
                             <span class="yellow_text">Chiclayo II:</span> <span> Carretera Panamericana KM.3 Av. Augusto B. Leguía </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
@@ -627,49 +635,54 @@
                             <span class="yellow_text"> Huancayo: </span> <span>  Av. Ferrocarril </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                     </div> 
+                  </div>
                 </div>
 
                 <div class="section_cities s_maestro d_none" id="maestro">
-                    <div class="lima" id="lima">
-                        <div class="info_city">
-                            <span class="yellow_text">Naranjal: </span> <span> Av. Alfredo Mendiola 5118. Los Olivos </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                    <div id="lima">
+                        <div class="lima">
+                            <div class="info_city">
+                                <span class="yellow_text">Naranjal: </span> <span> Av. Alfredo Mendiola 5118. Los Olivos </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text">Ate:</span> <span>Av. La Molina 378 – Ate </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text">Surquillo:</span> <span> Cruce Av. Angamos con Av. República de Panamá y Calle Domingo Elías esquina con República de Panamá.</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+    
                         </div>
-                        <div class="info_city">
-                            <span class="yellow_text">Ate:</span> <span>Av. La Molina 378 – Ate </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text">Surquillo:</span> <span> Cruce Av. Angamos con Av. República de Panamá y Calle Domingo Elías esquina con República de Panamá.</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-
                     </div>
-                    <div class="pronvincia d_none" id="provincia">
-                        <div class="info_city">
-                            <span class="yellow_text">Sullana:</span> <span> Cruce Av. Buenos Aires con Calle Jorge Chávez - Sullana</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text"> Piura:  </span> <span> Esquina Av. Sánchez Cerro con Av. Chulucanas </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text"> Cajamarca: </span> <span> Av. Vía de Evitamiento Sur cdra. 3 - Altura grifo El Amigo </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text">Trujillo:  </span> <span> Esquina de América Sur con Eguren </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text">Huacho: </span> <span>Panamericana Norte Km. 27 (al costado de Redondos)</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text"> Huancayo: </span> <span> Av. Huancavelica 221 - El Tambo</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text">Cusco:  </span> <span> Prolongación Av. De La Cultura cdra. 19 Distrito San Jerónimo </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-                        <div class="info_city">
-                            <span class="yellow_text">Chincha: </span> <span> Av. San Idelfonso S/N (5 esquinas) Sunampe. Chincha </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
-                        </div>
-
-                        <div class="info_city">
-                            <span class="yellow_text"> Cerro Colorado:  </span> <span> Pago de Chapallampa Nro S/N Urb </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                    <div id="provincia" class="d_none">
+                        <div class="pronvincia">
+                            <div class="info_city">
+                                <span class="yellow_text">Sullana:</span> <span> Cruce Av. Buenos Aires con Calle Jorge Chávez - Sullana</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text"> Piura:  </span> <span> Esquina Av. Sánchez Cerro con Av. Chulucanas </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text"> Cajamarca: </span> <span> Av. Vía de Evitamiento Sur cdra. 3 - Altura grifo El Amigo </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text">Trujillo:  </span> <span> Esquina de América Sur con Eguren </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text">Huacho: </span> <span>Panamericana Norte Km. 27 (al costado de Redondos)</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text"> Huancayo: </span> <span> Av. Huancavelica 221 - El Tambo</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text">Cusco:  </span> <span> Prolongación Av. De La Cultura cdra. 19 Distrito San Jerónimo </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+                            <div class="info_city">
+                                <span class="yellow_text">Chincha: </span> <span> Av. San Idelfonso S/N (5 esquinas) Sunampe. Chincha </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
+    
+                            <div class="info_city">
+                                <span class="yellow_text"> Cerro Colorado:  </span> <span> Pago de Chapallampa Nro S/N Urb </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -716,6 +729,12 @@
         var provincia = document.getElementById("provincia");
         provincia.classList.remove("d_block");
         provincia.classList.add("d_none");
+
+        let btn_provincia = document.getElementById("btn_provincia");
+        let btn_lima = document.getElementById("btn_lima");
+
+    btn_provincia.classList.remove("bg_btn_black");
+    btn_lima.classList.add("bg_btn_black");
      }
 
      function mostrar_provincia () {
@@ -725,10 +744,20 @@
         sodimac.classList.add("d_block");
 
     var lima = document.getElementById("lima");
-        lima.classList.remove("d_block");
+       
         lima.classList.add("d_none");
+        lima.classList.remove("d_block");
+
+
+     let btn_provincia = document.getElementById("btn_provincia");
+     let btn_lima = document.getElementById("btn_lima");
+
+    btn_provincia.classList.add("bg_btn_black");
+    btn_lima.classList.remove("bg_btn_black");
     
      }
+
+    
 
 
     </script>
