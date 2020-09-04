@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="./assets/css/carrousel.css">
 </head>
 
 <body>
@@ -155,7 +155,7 @@
                     </li>
                 </ul>
 
-                <div class="icons_section">
+                <div class="icons_section c-none">
                     <div class="icon_1">
                         <img src="./assets/images/icon_1.png" alt="icon_1">
                         <p>
@@ -183,6 +183,55 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="ef-carousel">
+                    <!--  Each carousel on the page needs to have an unique name  -->
+                    <input type="radio" name="unique-name" id="unique-name-1" checked class="ef-carousel__state"/>
+                    <input type="radio" name="unique-name" id="unique-name-2" class="ef-carousel__state"/>
+                    <div class="ef-carousel__items">
+                        <div class="ef-carousel__item">
+                            <div class="icons_section">
+                                <div class="icon_1">
+                                    <img src="./assets/images/icon_1.png" alt="icon_1">
+                                    <div class="text_icon">
+                                        <p>
+                                            Llamar y cordina <br>
+                                            <span class="yellow-span">(01)419 2000</span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="icon_1">
+                                    <img src="./assets/images/icon_2.png" alt="icon_1">
+                                    <p>
+                                       Registramos tus <br> datos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ef-carousel__item">
+                            <div class="icons_section">
+                                <div class="icon_1">
+                                    <img src="./assets/images/icon_3.png" alt="icon_1">
+                                    <p>
+                                       Recibe asesoria en <br> tu obra a dmicilio
+                                    </p>
+                                </div>
+                                <div class="icon_1">
+                                    <img src="./assets/images/icon_4.png" alt="icon_1">
+                                    <p>
+                                       Obtén tu informe <br> técnico de visita
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="ef-carousel__dots">
+                      <label for="unique-name-1" class="ef-carousel__dot"></label>
+                      <label for="unique-name-2" class="ef-carousel__dot"></label>
+                    </div>
+                  </div>
 
             </div>
             </div>
@@ -519,60 +568,170 @@
                         RED DE SERVCIO TÉCNICO
                     </h2>
                     <span>
-                        Contamos con 25 centros de ateción a nivel nacional
+                       <b> Contamos con 25 centros de ateción a nivel nacional</b>
                     </span>
                     <div class="buttons">
-                        <button class="sodimac">
-                            Lima
+                        <button onclick="mostrar_sodimac()" class="sodimac">
+                          Sodimac
                         </button>
-                        <button class="maestro">
-                            Provincia
+                        <button onclick="mostrar_maestro()" class="maestro">
+                           Maestro
                         </button>
                     </div>
                 </div>
                 <br>
 
-
-                <div class="section_cities">
-                    <div class="lima">
+                <div class="buttons_places">
+                    <button onclick="mostrar_lima()" class="p_sodimac bg_btn_black">
+                        Lima
+                      </button>
+                      <button onclick="mostrar_provincia()" class="p_maestro">
+                         Provincia
+                      </button>
+                </div>
+                <div class="section_cities s_sodimac" id="sodimac">
+                    <div class="lima" id="lima">
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text">Ate Vitarte: </span> <span> Av. Los Frutales N° 202 </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text">Atocongo: </span> <span> Av. Circunvalación Nº 1803 (Open plaza Atocongo)</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text">Javier Prado: </span> <span>Av. Javier Prado Este Nº 1059 </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text">Jockey Plaza: </span> <span> Av. Javier Prado Este Nº 4200 </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text"> Lima Centro: </span> <span> Av. Tacna Nº 640 - 644, Lima</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text"> San Miguel: </span> <span> Av. la Marina Nº 2355</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text"> Open Plaza Angamos:  </span> <span> Av. Nueva Tomás Marsano N° 961 </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text"> Puruchuco Ate:  </span> <span> Av. Nicolás Ayllón 4770 </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text"> Comas:  </span> <span> Los Angeles / Av. El Retablo , frente al mercado Mayorista Unicach </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                     </div>
-                    <div class="pronvincia">
+                   <div class="pronvincia d_none" id="provincia">
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text">Chiclayo II:</span> <span> Carretera Panamericana KM.3 Av. Augusto B. Leguía </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text"> Huancayo: </span> <span>  Av. Ferrocarril </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="section_cities s_maestro d_none" id="maestro">
+                    <div class="lima" id="lima">
+                        <div class="info_city">
+                            <span class="yellow_text">Naranjal: </span> <span> Av. Alfredo Mendiola 5118. Los Olivos </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text">Ate:</span> <span>Av. La Molina 378 – Ate </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text">Surquillo:</span> <span> Cruce Av. Angamos con Av. República de Panamá y Calle Domingo Elías esquina con República de Panamá.</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+
+                    </div>
+                    <div class="pronvincia d_none" id="provincia">
+                        <div class="info_city">
+                            <span class="yellow_text">Sullana:</span> <span> Cruce Av. Buenos Aires con Calle Jorge Chávez - Sullana</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                         <div class="info_city">
-                            <span class="yellow_text">Ate Vitarate</span> <span> Av los Frutales N| 202</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                            <span class="yellow_text"> Piura:  </span> <span> Esquina Av. Sánchez Cerro con Av. Chulucanas </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text"> Cajamarca: </span> <span> Av. Vía de Evitamiento Sur cdra. 3 - Altura grifo El Amigo </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text">Trujillo:  </span> <span> Esquina de América Sur con Eguren </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text">Huacho: </span> <span>Panamericana Norte Km. 27 (al costado de Redondos)</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text"> Huancayo: </span> <span> Av. Huancavelica 221 - El Tambo</span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text">Cusco:  </span> <span> Prolongación Av. De La Cultura cdra. 19 Distrito San Jerónimo </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+                        <div class="info_city">
+                            <span class="yellow_text">Chincha: </span> <span> Av. San Idelfonso S/N (5 esquinas) Sunampe. Chincha </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
+                        </div>
+
+                        <div class="info_city">
+                            <span class="yellow_text"> Cerro Colorado:  </span> <span> Pago de Chapallampa Nro S/N Urb </span> <span class="map_line" > <img src="./assets/images/place_icon.png" alt="map"> <a href="#">ver mapa ></a> </span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <br><br>
+
+    <script>
+
+     function mostrar_maestro () {
+        //  alert('maestro')
+         var maestro = document.getElementById("maestro");
+         maestro.classList.remove("d_none");
+        maestro.classList.add("d_block");
+
+        var sodimac = document.getElementById("sodimac");
+        sodimac.classList.remove("d_block");
+        sodimac.classList.add("d_none");
+     }
+
+     function mostrar_sodimac () {
+        //  alert('sodimac')
+         var sodimac = document.getElementById("sodimac");
+         sodimac.classList.remove("d_none");
+        sodimac.classList.add("d_block");
+
+    var maestro = document.getElementById("maestro");
+        maestro.classList.remove("d_block");
+        maestro.classList.add("d_none");
+    
+     }
+
+
+
+
+     function mostrar_lima () {
+        //  alert('maestro')
+         var lima = document.getElementById("lima");
+         lima.classList.remove("d_none");
+        lima.classList.add("d_block");
+
+        var provincia = document.getElementById("provincia");
+        provincia.classList.remove("d_block");
+        provincia.classList.add("d_none");
+     }
+
+     function mostrar_provincia () {
+        //  alert('provincia')
+         var provincia = document.getElementById("provincia");
+         provincia.classList.remove("d_none");
+        sodimac.classList.add("d_block");
+
+    var lima = document.getElementById("lima");
+        lima.classList.remove("d_block");
+        lima.classList.add("d_none");
+    
+     }
+
+
+    </script>
 
 </body>
 
